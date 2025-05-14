@@ -16,9 +16,9 @@ Este é um backend simples desenvolvido em Go que envia e-mails utilizando o pac
     envia-email/
     ├── internal/
     │ └── handler/
-    │ ├── email_handler.go # Manipulador da API de envio de e-mail
+    │ ├── connect.go # Manipulador da API de envio de e-mail
     │ └── utils/
-    │ ├── email_utils.go # Funções auxiliares para envio de e-mail e validação de CAPTCHA
+    │ ├── utils.go # Funções auxiliares para envio de e-mail e validação de CAPTCHA
     ├── main.go # Arquivo principal para inicializar o servidor
     ├── go.mod # Arquivo de dependências
     ├── .env # Arquivo para definir variáveis de ambiente
