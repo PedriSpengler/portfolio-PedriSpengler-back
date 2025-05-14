@@ -128,5 +128,3 @@ Contribuições são bem-vindas! Se você tiver sugestões ou encontrar problema
 
 ## Licença 📄
 Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para mais informações.
-# portfolio-PedriSpengler-back
-# portfolio-PedriSpengler-back
