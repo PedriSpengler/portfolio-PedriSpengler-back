@@ -13,7 +13,7 @@ Este é um backend simples desenvolvido em Go que envia e-mails utilizando o pac
 ## Estrutura do Projeto 📂
 
 ```
-    envia-email/
+    server/
     ├── internal/
     │ └── handler/
     │ ├── connect.go # Manipulador da API de envio de e-mail
@@ -38,14 +38,14 @@ Este é um backend simples desenvolvido em Go que envia e-mails utilizando o pac
 
    
 ```
-   git clone https://github.com/usuario/envia-email.git
-   cd envia-email
+   git clone https://github.com/PedriSpengler/portfolio-PedriSpengler-back.git
+   cd server
 ```
 Instale as dependências:
 go mod tidy
 Crie um arquivo .env na raiz do projeto e adicione as seguintes variáveis de ambiente:
 ```
-    SMTP_EMAIL=seu-email@gmail.com
+    SMTP_EMAIL=email-receiver@gmail.com
     SMTP_PASSWORD=sua-senha-do-email
     RECAPTCHA_SECRET=sua-chave-secreta-recaptcha
     RECAPTCHA_PROJECT_ID= seu-ID-projeto-google-cloud
@@ -54,7 +54,7 @@ Crie um arquivo .env na raiz do projeto e adicione as seguintes variáveis de am
 Execute o servidor:
 
 go run main.go
-O servidor estará rodando em http://localhost:8080 ou na porta definida na variável de ambiente PORT.
+O servidor estará rodando em http://localhost:8080 ou na porta definida na variável port.
 
 ## Endpoints da API 💻
 POST /api/send-email
@@ -63,11 +63,10 @@ Este endpoint permite enviar um e-mail para o endereço configurado no servidor 
 Request Body:
 ```
 {
-    "email": "seu-email@dominio.com",
+    "email": "email-remetente@dominio.com",
     "subject": "Assunto do e-mail",
     "name": "Seu Nome",
     "message": "Mensagem que será enviada no corpo do e-mail",
-    "captcha": "Resposta do reCAPTCHA"
 }
 ```
 Campos obrigatórios:
@@ -79,8 +78,6 @@ subject: Assunto do e-mail 📝.
 name: Nome do remetente 🧑‍💻.
 
 message: Corpo do e-mail 📨.
-
-captcha: Resposta do reCAPTCHA para validação de envio 🔒.
 
 Resposta:
 
