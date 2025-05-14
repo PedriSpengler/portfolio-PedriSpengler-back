@@ -48,7 +48,8 @@ Crie um arquivo .env na raiz do projeto e adicione as seguintes variáveis de am
     SMTP_EMAIL=seu-email@gmail.com
     SMTP_PASSWORD=sua-senha-do-email
     RECAPTCHA_SECRET=sua-chave-secreta-recaptcha
-    PORT=8080
+    RECAPTCHA_PROJECT_ID= seu-ID-projeto-google-cloud
+    RECAPTCHA_KEY=chave-recaptcha
 ```
 Execute o servidor:
 
