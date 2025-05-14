@@ -1,0 +1,8 @@
+POST https://portf-lio2-0-backend.onrender.com/api/send-email
+
+{
+    "email": "pedrojoaquimgarfield@gmail.com",
+    "subject": "Quero contratar seus serviços como dev FullStack", 
+    "name": "Lucas Pires Almeida",
+    "message": "Estou buscando contratar um dev para construir um website que busque perfis na internet que se interessem em conteúdos programáticos voltados a nossa área de atuação."
+}
