@@ -21,8 +21,10 @@ Este é um backend simples desenvolvido em Go que envia e-mails utilizando o pac
     │ ├── utils.go # Funções auxiliares para envio de e-mail e validação de CAPTCHA
     ├── main.go # Arquivo principal para inicializar o servidor
     ├── go.mod # Arquivo de dependências
+    ├── go.sum # Registra informações sobre as dependências usadas no projeto, incluindo versões e verificações de integridade (hashes).
+    ├── request.http # Essa requisição serve para enviar uma solicitação de contato
     ├── .env # Arquivo para definir variáveis de ambiente
-    └── README.md # Documentação do projeto
+    README.md # Documentação do projeto
 ```
 
 ## Como Rodar o Projeto 🚀
@@ -35,8 +37,6 @@ Este é um backend simples desenvolvido em Go que envia e-mails utilizando o pac
 
 ### Instalação 🛠️
 1. Clone o repositório para o seu ambiente local:
-
-   
 ```
    git clone https://github.com/PedriSpengler/portfolio-PedriSpengler-back.git
    cd server
@@ -46,7 +46,7 @@ go mod tidy
 Crie um arquivo .env na raiz do projeto e adicione as seguintes variáveis de ambiente:
 ```
     SMTP_EMAIL=email-receiver@gmail.com
-    SMTP_PASSWORD=sua-senha-do-email
+    SMTP_PASSWORD=sua-senha-projeto-recaptcha
     RECAPTCHA_SECRET=sua-chave-secreta-recaptcha
     RECAPTCHA_PROJECT_ID= seu-ID-projeto-google-cloud
     RECAPTCHA_KEY=chave-recaptcha
